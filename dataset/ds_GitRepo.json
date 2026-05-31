@@ -5,11 +5,6 @@
 			"referenceName": "LS_Sunil_Git",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"p_rel_url": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
