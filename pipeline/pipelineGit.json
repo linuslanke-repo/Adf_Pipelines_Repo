@@ -58,7 +58,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"file_name": {
-								"value": "@concat('Git-File-',utcNow(),'.csv')",
+								"value": "@concat('Git-File-',formatDateTime(utcNow(),'yyyy-MM-dd'),'.csv')",
 								"type": "Expression"
 							}
 						}
