@@ -10,11 +10,11 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "https://raw.githubusercontent.com/linuslanke-repo/adventureWorksKaggleDataset/refs/heads/main/AdventureWorks_Calendar.csv"
+				"relativeUrl": "linuslanke-repo/adventureWorksKaggleDataset/refs/heads/main/AdventureWorks_Calendar.csv"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "/",
 			"escapeChar": "\\",
-			"firstRowAsHeader": true,
+			"firstRowAsHeader": false,
 			"quoteChar": "\""
 		},
 		"schema": []
