@@ -5,6 +5,11 @@
 			"referenceName": "LS_Sunil_Git",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"p_rel_url": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
@@ -12,9 +17,9 @@
 				"type": "HttpServerLocation",
 				"relativeUrl": "linuslanke-repo/adventureWorksKaggleDataset/refs/heads/main/AdventureWorks_Calendar.csv"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "/",
 			"escapeChar": "\\",
-			"firstRowAsHeader": true,
+			"firstRowAsHeader": false,
 			"quoteChar": "\""
 		},
 		"schema": []
