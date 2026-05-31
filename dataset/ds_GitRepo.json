@@ -1,0 +1,22 @@
+{
+	"name": "ds_GitRepo",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Sunil_Git",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "https://raw.githubusercontent.com/linuslanke-repo/adventureWorksKaggleDataset/refs/heads/main/AdventureWorks_Calendar.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
