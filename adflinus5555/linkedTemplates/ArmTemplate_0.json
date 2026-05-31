@@ -72,9 +72,9 @@
 						"type": "HttpServerLocation",
 						"relativeUrl": "linuslanke-repo/adventureWorksKaggleDataset/refs/heads/main/AdventureWorks_Calendar.csv"
 					},
-					"columnDelimiter": "/",
+					"columnDelimiter": ",",
 					"escapeChar": "\\",
-					"firstRowAsHeader": false,
+					"firstRowAsHeader": true,
 					"quoteChar": "\""
 				},
 				"schema": []
@@ -92,11 +92,22 @@
 					"referenceName": "AzureDataLakeStorage1",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"file_name": {
+						"type": "string"
+					}
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "AzureBlobFSLocation"
+						"type": "AzureBlobFSLocation",
+						"fileName": {
+							"value": "@dataset().file_name",
+							"type": "Expression"
+						},
+						"folderPath": "raw",
+						"fileSystem": "data-lake"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -170,7 +181,12 @@
 							{
 								"referenceName": "ds_raw",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"file_name": {
+										"value": "@concat('Git-File-',formatDateTime(utcNow(),'yyyy-MM-dd'),'.csv')",
+										"type": "Expression"
+									}
+								}
 							}
 						]
 					}
