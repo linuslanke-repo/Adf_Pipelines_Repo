@@ -1,9 +1,0 @@
-{
-	"name": "pipeline-Git-DataIngestion",
-	"properties": {
-		"folder": {
-			"name": "PracticeFolder"
-		},
-		"annotations": []
-	}
-}
