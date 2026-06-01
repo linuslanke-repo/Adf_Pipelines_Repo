@@ -55,7 +55,13 @@
 				"outputs": [
 					{
 						"referenceName": "ds_Raw",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"git_file_name": {
+								"value": "@concat('My_Git_File_',formatDateTime(utcNow()),'.csv')",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
