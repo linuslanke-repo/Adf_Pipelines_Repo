@@ -1,0 +1,9 @@
+{
+	"name": "pl_GitFiles_Parametrisized_Ingestion",
+	"properties": {
+		"folder": {
+			"name": "Practice"
+		},
+		"annotations": []
+	}
+}

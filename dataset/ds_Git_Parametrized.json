@@ -1,0 +1,26 @@
+{
+	"name": "ds_Git_Parametrized",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Sunil_Git",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_rel_url": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
